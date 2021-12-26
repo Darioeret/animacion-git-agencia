@@ -274,6 +274,43 @@ grid-area: foto;
     border: 2px solid blue
 }
 
+.avion-vuela{
+    background-image: url(img/avion.png);
+    background-size: cover;
+    background-position: center;
+    height: 50px;
+    width: 100px;
+    animation-name: vuelo;
+    animation-iteration-count: 1;
+    animation-timing-function:ease;
+    animation-duration: 10s;
+    margin-left: 10%;
+    
+}
+
+    @keyframes vuelo{
+        0%{
+            opacity: 0;
+        }
+        20%{
+            opacity: 1;
+            transform: translate(-100px);
+        }
+        40%{
+            opacity: 1;
+            transform: rotateX(-300px);
+        }
+        80%{
+            opacity: 1;
+            transform: rotateX(-500px);
+        }
+        100%{
+            opacity: 0;
+            transform: rotateX(-1200px);
+            
+        }
+}
+
 @media screen and (min-width: 900px) {
 
 
@@ -480,6 +517,39 @@ grid-area: foto;
         background-size: cover;
         background-position: center;
     }
+    .avion-vuela{
+        background-image: url(img/avion.png);
+        background-size: cover;
+        height: 50px;
+        width: 100px;
+        animation-name: vuelo;
+        animation-iteration-count: 1;
+        animation-duration: 10s;
+        background-position: center;
+     
     
+    }
+    @keyframes vuelo{
+        0%{
+            opacity: 0;
+        }
+        20%{
+            opacity: 1;
+            transform: translate(-100px);
+        }
+        40%{
+            opacity: 1;
+            transform: rotateX(-300px);
+        }
+        80%{
+            opacity: 1;
+            transform: rotateX(-500px);
+        }
+        100%{
+            opacity: 0;
+            transform: rotateX(-1200px);
+            
+        }
+    }
 }    
     
