@@ -1,0 +1,485 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1+Code:wght@300&family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(8, 16, 108, 1) 0%, rgba(9, 19, 121, 1) 6%, rgba(0, 212, 255, 1) 100%);
+}
+
+.header {
+    width: 100%;
+    height: 20%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 14px;
+
+}
+
+.barra-inicio {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    border: 4px solid blue;
+    background-color: lightblue;
+    color: red;
+    height: 20%;
+    font-size: 18px;
+    justify-content: space-evenly;
+
+
+}
+
+.navegador1 a {
+    color: red;
+    text-decoration: 0;
+
+}
+
+.navegador2 a {
+    text-decoration: none;
+    color: red;
+}
+
+.navegador3 a {
+    text-decoration: none;
+    color: red;
+
+}
+
+.navegador4 a {
+    text-decoration: none;
+    color: red;
+}
+
+.navegador5 a {
+    text-decoration: none;
+    color: red;
+}
+
+
+main {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    margin-top: 0px;
+    margin-left: 3px;
+    margin-bottom: 0px;
+    margin-right: 5px;
+
+
+
+}
+
+.mcontenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "titulo titulo"
+    "texto texto"
+    "boton boton"
+    "foto foto"
+    ;
+    width: 100%;
+    height: 100%;
+    font-family: 'Oswald', sans-serif;
+    border: 2px solid black;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+
+}
+
+
+
+
+.mcontenedor a {
+
+
+    text-decoration: none;
+    border: 2px solid white;
+    background-color: blue;
+    font-size: 26px;
+    color: black;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 35%;
+    grid-area: boton;
+
+}
+
+.foto {
+    width:80%;
+    height:100%;
+    background-image: url(img/turismo.jpg);
+    background-size: cover;
+    margin-left: 10%;
+    border: 2px solid black;
+grid-area: foto;
+}
+
+.mcontenedor h2{
+    grid-area: titulo;
+}
+.mcontenedor p{
+    grid-area: texto;
+}
+
+.pie-pagina {
+    width: 100%;
+    height: 20%;
+    max-height: 20%;
+    background-color: blue;
+    display: grid;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-left: 4px;
+    margin-bottom: 300px;
+}
+
+.item {
+    background-color: chocolate;
+    border: 2px solid black;
+    text-align: center;
+
+    height: 120px;
+    text-align: start;
+
+}
+
+.item1 p {
+    font-size: 16px;
+}
+
+.item3 {
+    font-size: 15px;
+}
+
+.item2 {
+    text-decoration: 0;
+}
+
+
+.galeria {
+    background-color: lightblue;
+    display: grid;
+    justify-content: center;
+    width: 80%;
+   margin-left: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 30px;
+
+
+}
+
+.galeria h3 {
+    margin-left: 30%;
+    text-transform: capitalize;
+}
+
+.header h1 {
+    font-size: 30px;
+    color: white;
+    margin-left: 40%;
+    margin-bottom: 5%;
+    margin-top: 0;
+}
+
+
+.destino1 {
+    background-image: url(img/barilo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destino2 {
+    background-image: url(img/jujuy.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destino3 {
+    background-image: url(img/salta.jfif);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.destino4 {
+    background-image: url(img/iguazu.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destino5 {
+    background-image: url(img/bsaires.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destino6 {
+
+    background-image: url(img/cordoba.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destino7 {
+    background-image: url(img/rosario.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destino8 {
+    background-image: url(img/mendoza.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.destino9 {
+    background-image: url(img/ushuaia.jfif);
+    background-size: cover;
+    background-position: center;
+}
+
+.nos {
+    display: flex ;
+    flex-direction: column;
+    
+}
+
+.nos p {
+    height: 40%;
+    width: 100%;
+    border: 2px solid blue;
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px;
+    color: white;
+
+}
+
+.nos img {
+    height: 70%;
+    width: 100%;
+    border: 2px solid blue
+}
+
+@media screen and (min-width: 900px) {
+
+
+    main {
+        height: 100%;
+        width: 100%;
+        display: flex;
+
+    }
+
+    .mcontenedor {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "titulo foto"
+        "texto foto"
+        "boton foto"
+
+    }
+
+.mcontenedor p{
+    height: auto;
+    width: 80%;
+    grid-area: texto;
+    margin-left: 40px;
+}
+
+.contendeor h2{
+    height: auto;
+    width: 100%;
+    grid-area: titulo;
+}
+
+
+    .mcontenedor a {
+
+        text-decoration: none;
+        border: 2px solid white;
+        background-color: blue;
+        font-size: 26px;
+        color: black;
+       grid-area: boton;
+        height: 30%;
+        
+    }
+
+    .foto {
+        width:80%;
+        height:100%;
+        background-image: url(img/turismo.jpg);
+        background-size: cover;
+        margin-left: 10%;
+        border: 2px solid black;
+        grid-area: foto;
+
+    }
+
+
+    .pie-pagina {
+        width: 100%;
+        height: 50%;
+        max-height: 20%;
+        background-color: blue;
+        display: grid;
+        grid-template-columns: 50% 30% 20%;
+        font-size: 10px;
+        margin-top: 300px;
+        
+    }
+
+    .item {
+        background-color: chocolate;
+        border: 2px solid black;
+        text-align: center;
+
+        height: 120px;
+        text-align: start;
+
+    }
+
+    .item1 p {
+        font-size: 16px;
+    }
+
+    .item3 {
+        font-size: 15px;
+    }
+
+    .item2 {
+        text-decoration: 0;
+    }
+    .nos {
+        display: flex;
+    }
+    .nos {
+        display: flex ;
+        flex-direction: row;
+        
+    }
+    
+    .nos p {
+        height: 100%;
+        width: 30%;
+        border: 2px solid blue;
+        font-family: 'Oswald', sans-serif;
+        font-size: 22px;
+        color: white;
+    
+    }
+    
+    .nos img {
+        height: 50%;
+        width: 60%;
+        border: 2px solid blue
+    }
+    .galeria {
+        background-color: lightblue;
+        display: grid;
+        grid-template-columns: 250px 250px 250px;
+        grid-template-rows: 250px 250px 250px;
+        height: 100%;
+        width: 100%;
+        grid-gap: 20px;
+        grid-row-gap: 20px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: yellow;
+        font-size: 30px;
+    
+    
+    }
+    
+    .galeria h3 {
+        
+        text-align: start;
+        
+    }
+    
+    .header h1 {
+        font-size: 30px;
+        color: white;
+        margin-left: 40%;
+        margin-bottom: 5%;
+        margin-top: 0;
+    }
+    
+    
+    .destino1 {
+        background-image: url(img/barilo.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .destino2 {
+        background-image: url(img/jujuy.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .destino3 {
+        background-image: url(img/salta.jfif);
+        background-size: cover;
+        background-position: bottom;
+    }
+    
+    .destino4 {
+        background-image: url(img/iguazu.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .destino5 {
+        background-image: url(img/bsaires.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .destino6 {
+    
+        background-image: url(img/cordoba.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .destino7 {
+        background-image: url(img/rosario.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .destino8 {
+        background-image: url(img/mendoza.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .destino9 {
+        background-image: url(img/ushuaia.jfif);
+        background-size: cover;
+        background-position: center;
+    }
+    
+}    
+    
